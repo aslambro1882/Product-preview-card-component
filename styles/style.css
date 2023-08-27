@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  overflow: hidden;
+  background-image: url("/images/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body > main {
+  width: 90%;
+  height: 80%;
+  /* border: 1px solid black; */
+  background-color: #f3ebe4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body > main > article {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* border: 1px solid red; */
+  background-color: white;
+  border-radius: 10px;
+  width: 40%;
+}
+#desktop-img {
+  width: 100%;
+  vertical-align: top;
+  display: block;
+}
+#mobile-img {
+  display: none;
+}
+
+body > main > article > section:nth-child(even) {
+  padding: 30px;
+}
+
+#perfume {
+  color: #9a9a9e;
+  letter-spacing: 3px;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+#title {
+  color: #1d1f20;
+  font-size: 40px;
+  max-width: 90%;
+  line-height: 35px;
+  margin-bottom: 20px;
+}
+#details {
+  color: #9a9a9e;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+#price-box {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+#price-box > h3 {
+  color: #3c816a;
+  font-size: 40px;
+  margin-right: 10px;
+}
+#price-box > p {
+  color: #9a9a9e;
+  text-decoration: line-through;
+  font-size: larger;
+}
+
+button {
+  width: 100%;
+  height: 50px;
+  border-radius: 15px;
+  background-color: #3c816a;
+  color: white;
+  border: none;
+  font-size: large;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 675px) {
+  body {
+    overflow: auto;
+  }
+  body > main {
+    width: 100%;
+    height: 100%;
+    background-color: #f3ebe4;
+  }
+  body > main > article {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: white;
+    border-radius: 10px;
+    width: 90%;
+    height: 90%;
+  }
+
+  #mobile-img {
+    width: 100%;
+    display: block;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  #desktop-img {
+    display: none;
+  }
+}
