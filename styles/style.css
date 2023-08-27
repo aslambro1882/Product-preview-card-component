@@ -92,6 +92,12 @@ button {
   align-items: center;
   justify-content: center;
   margin-top: 20px;
+  outline: none;
+}
+
+button:active {
+  background-color: #1f4b3c;
+  transition: background-color 0.1s;
 }
 
 @media screen and (max-width: 675px) {
